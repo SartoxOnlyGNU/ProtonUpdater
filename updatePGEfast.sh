@@ -13,7 +13,10 @@ dstpath="$HOME/.steam/root/compatibilitytools.d"
   else
     echo "Proton $latestversion is the latest version and is not installed yet."
     echo "Installing Proton $latestverion"
-    url=$(curl -s $latesturi | egrep -m1 "browser_download_url.*Proton" | cut -d \" -f4)
+
+    # TODO : Fix parsing maybe?
+    #url=$(curl -s $latesturi | egrep -m1 "browser_download_url.*Proton" | cut -d \" -f4)
+    url="https://github.com/GloriousEggroll/proton-ge-custom/releases/download/${latestversion}/Proton-${latestversion}.tar.gz"
   fi
 
 rsp="$(curl -sI "$url" | head -1)"
