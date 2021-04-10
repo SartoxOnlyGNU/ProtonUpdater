@@ -1,10 +1,9 @@
-# CProton - Custom Proton Installscript
-Script to make it easier to update Proton GE to the latest version.
+# CProton - Custom Proton Install script
+CProton is a simple script to make it easier to update Proton GE to the latest version (Steam only).
 
-Two simple scripts to help you to install the latest version of GloriousEggroll's custom Proton, which can be found [here](https://github.com/GloriousEggroll/proton-ge-custom)
+Proton GE can be found [here](https://github.com/GloriousEggroll/proton-ge-custom).
 
-
-[Original script by /u/ChockFullOfShit](https://www.reddit.com/r/SteamPlay/comments/e2ms5v/custom_proton_glorious_eggroll_proton420ge1/f8y2ioe/), I (/u/flubberding) expanded a bit on it.
+[Original script by /u/ChockFullOfShit](https://www.reddit.com/r/SteamPlay/comments/e2ms5v/custom_proton_glorious_eggroll_proton420ge1/f8y2ioe/), modified by /u/flubberding who expanded a bit on it. Then there's me who forked it. I'll try to keep the script updated in case something breaks.
 
 Disclaimer: Subversions like the MCC versions of Proton 4.21-GE-1, will install as it's main version and not install separately.
 For now, this may result in false "not installed"-detections or errors while force installing a specific subversion.
