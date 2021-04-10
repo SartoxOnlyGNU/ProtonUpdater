@@ -39,7 +39,7 @@ InstallProtonGE() {
     mkdir "$dstpath"
     echo [Info] Created "$dstpath"
   }
-  
+
   curl -sL "$url" | tar xfzv - -C "$dstpath"
   installComplete=true
 }
@@ -142,9 +142,11 @@ InstallationPrompt() {
 
 if [ -z "$parameter" ]; then
   version="$(curl -s $latesturi | grep -E -m1 "tag_name" | cut -d \" -f4)"
+  
   # TODO : Fix parsing maybe?
-  #url=$(curl -s $latesturi | grep -E -m1 "browser_download_url.*Proton" | cut -d \" -f4)
-  url="Proton-${version}.tar.gz"
+  #url=$(curl -s $latesturi | grep -E -m1 "browser_download_url.*Proton" | cut -d \" -f4) 
+  url="https://github.com/GloriousEggroll/proton-ge-custom/releases/download/${version}/Proton-${version}.tar.gz"
+
   if [ -d "$dstpath"/Proton-"$version" ]; then
     echo "Proton $version is the latest version and is already installed."
   else
